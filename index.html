@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ca4ddc68d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commerce Website Design</title>
+  </head>
+  <body>
+    <!-------------------------------- Navbar ------------------------------->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              class="fly-blue"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png"
+              alt="logo"
+            />
+            <img
+              class="red-store"
+              src="e-commerce.png/images/logo.png"
+              alt="logo"
+            />
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Offers</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img
+            src="e-commerce.png/images/cart.png"
+            width="30px"
+            height="30px"
+            alt=""
+          />
+          <img src="e-commerce.png/images/menu.png" onclick="menuToggle()" class="menu-icon" alt="">
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 class="home-heading">
+              Clothes, Gadgets And Materials <br> That Get YOU Noticed!
+            </h1>
+            <p class="home-description">
+              Fashion is part of the daily air and it does not quite help that
+              it changes all the time. Clothes have always been a marker of the
+              era and we are in a revolution. Your fashion makes you been seen
+              and heard that way you are. <br />So, celebrate the seasons new
+              and exciting fashion in your own way.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-img.png"
+              alt="dresses to be noticed"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- featured categories ------------------------------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="e-commerce.png/images/category-1.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="e-commerce.png/images/category-2.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="e-commerce.png/images/category-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- featured products ------------------------------->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-1.jpg" alt="pro" />
+          <h4>Red Printed T-Shirt</h4>
+          <p className="brand">by Sky Buy</p>
+          <div class="product-details">
+            <p>$50.00</p>
+            <div class="rating-con">
+              <p class="rating">4.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-2.jpg" alt="pro" />
+          <h4>Black Sports Shoe</h4>
+          <p className="brand">by Malathora</p>
+          <div class="product-details">
+            <p>$59.00</p>
+            <div class="rating-con">
+              <p class="rating">4.9</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-3.jpg" alt="pro" />
+          <h4>Grey Jeans</h4>
+          <p className="brand">by Tetoa</p>
+          <div class="product-details">
+            <p>$20.00</p>
+            <div class="rating-con">
+              <p class="rating">2.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-4.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4 product-item">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-hoodie.png"
+            alt="pro"
+          />
+          <h4>Red Printed T-Shirt</h4>
+          <p className="brand">by Sky Buy</p>
+          <div class="product-details">
+            <p>$50.00</p>
+            <div class="rating-con">
+              <p class="rating">4.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-jacket.png"
+            alt="pro"
+          />
+          <h4>Black Sports Shoe</h4>
+          <p className="brand">by Malathora</p>
+          <div class="product-details">
+            <p>$59.00</p>
+            <div class="rating-con">
+              <p class="rating">4.9</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-purple-jacket.png"
+            alt="pro"
+          />
+          <h4>Grey Jeans</h4>
+          <p className="brand">by Tetoa</p>
+          <div class="product-details">
+            <p>$20.00</p>
+            <div class="rating-con">
+              <p class="rating">2.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-side-sareee.png"
+            alt="pro"
+          />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-5.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-6.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-7.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-9.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-8.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-10.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-11.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 product-item">
+          <img src="e-commerce.png/images/product-12.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- offer products ------------------------------->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="e-commerce.png/images/exclusive.png"
+              class="offer-img"
+              alt=""
+            />
+          </div>
+          <div class="col-2">
+            <p>Exclusiverly Availabel on FlyBlue RedStore</p>
+            <h1>Smart Band 4</h1>
+            <small>
+              The Mi Smart Band 4 comes with an intuitive touchscreen display.
+              <br />With brightness levels up to 400 nits, this full-colour
+              AMOLED.
+            </small>
+            <a href="#" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- Testimonial ------------------------------->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+              <p class="testimonial-para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Doloremque, non molestias unde ullam amet molestiae. Maxime quidem
+                rerum minima.
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="e-commerce.png/images/user-1.png" alt="" />
+              <h3>Sean Parker</h3>
+          </div>
+  
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+              <p class="testimonial-para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                molestiae tempore placeat obcaecati. Suscipit nam autem harum
+                magni obcaecati! Eligendi maxime voluptatem cumque illum quisquam
+                officia dignissimos deleniti, quos tenetur?
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="e-commerce.png/images/user-2.png" alt="" />
+              <h3>Mabel JOe</h3>
+            
+          </div>
+  
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+              <p class="testimonial-para">
+                Quibusdam veritatis animi ipsam ad ex nisi sint nobis culpa necessitatibus
+                deserunt vitae quam quis repellendus laboriosam voluptatem debitis
+                cupiditate, provident iure.
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="e-commerce.png/images/user-3.png" alt="" />
+              <h3>Jennie koal</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- brands ------------------------------->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="e-commerce.png/images/logo-godrej.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="e-commerce.png/images/logo-oppo.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="e-commerce.png/images/logo-coca-cola.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="e-commerce.png/images/logo-paypal.png" alt="">
+          </div>
+          <div class="col-5">
+            <img src="e-commerce.png/images/logo-philips.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- footer ------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Andorid and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="e-commerce.png/images/play-store.png" alt="">
+              <img src="e-commerce.png/images/app-store.png" alt="">
+            </div>
+          </div>
+          <div class="footer-col-2">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png"
+                alt="logo"
+              />
+              <img
+                src="e-commerce.png/images/logo.png"
+                alt="logo"
+              />
+            <p>Our Purpose is to Sustainbility Make the pleasure and Benefits of Sports. Download App for Andorid and ios mobile phone.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copy-right">Copyright 2024 @easttutorial.gmail.com</p>
+      </div>
+    </div>
+
+    <!-------------------------------- js for toggle menu ------------------------------->
+    <script>
+      var MenuItems = document.getElementById("menuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menuToggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px"
+        }
+        else{
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+
+    </script>
+
+
+
+
+  </body>
+</html>

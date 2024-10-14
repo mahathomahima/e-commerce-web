@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ca4ddc68d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>All Products FlyBlue RedStore</title>
+  </head>
+  <body>
+    <!-------------------------------- Navbar ------------------------------->
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              class="fly-blue"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png"
+              alt="logo"
+            />
+            <img
+              class="red-store"
+              src="e-commerce.png/images/logo.png"
+              alt="logo"
+            />
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Offers</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img
+            src="e-commerce.png/images/cart.png"
+            width="30px"
+            height="30px"
+            alt=""
+          />
+          <img src="e-commerce.png/images/menu.png" onclick="menuToggle()" class="menu-icon" alt="">
+        </div>
+      </div>
+
+    <!-------------------------------- single product Details ------------------------------->
+    <div class="single-product small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="e-commerce.png/images/gallery-1.jpg" width="100%" alt="" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="e-commerce.png/images/gallery-1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="e-commerce.png/images/gallery-2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="e-commerce.png/images/gallery-3.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="e-commerce.png/images/gallery-4.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printed T-Shirt by HRX</h1>
+                <h4>$50.00</h4>
+                <select>
+                    <option value="">Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option><Small></Small></option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa repellendus placeat magnam praesentium, dolorum quibusdam aut. Provident adipisci necessitatibus expedita, debitis blanditiis laboriosam nobis esse, nihil eligendi earum fuga voluptate?</p>
+            </div>
+        </div>
+    </div>
+      
+    <!-------------------------------- featured products ------------------------------->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-1.jpg" alt="pro" />
+          <h4>Red Printed T-Shirt</h4>
+          <p className="brand">by Sky Buy</p>
+          <div class="product-details">
+            <p>$50.00</p>
+            <div class="rating-con">
+              <p class="rating">4.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-2.jpg" alt="pro" />
+          <h4>Black Sports Shoe</h4>
+          <p className="brand">by Malathora</p>
+          <div class="product-details">
+            <p>$59.00</p>
+            <div class="rating-con">
+              <p class="rating">4.9</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-3.jpg" alt="pro" />
+          <h4>Grey Jeans</h4>
+          <p className="brand">by Tetoa</p>
+          <div class="product-details">
+            <p>$20.00</p>
+            <div class="rating-con">
+              <p class="rating">2.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <img src="e-commerce.png/images/product-4.jpg" alt="pro" />
+          <h4>Black Casual T-Shirt</h4>
+          <p className="brand">by Trends</p>
+          <div class="product-details">
+            <p>$33.00</p>
+            <div class="rating-con">
+              <p class="rating">3.4</p>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-------------------------------- footer ------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Andorid and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="e-commerce.png/images/play-store.png" alt="">
+              <img src="e-commerce.png/images/app-store.png" alt="">
+            </div>
+          </div>
+          <div class="footer-col-2">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png"
+                alt="logo"
+              />
+              <img
+                src="e-commerce.png/images/logo.png"
+                alt="logo"
+              />
+            <p>Our Purpose is to Sustainbility Make the pleasure and Benefits of Sports. Download App for Andorid and ios mobile phone.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copy-right">Copyright 2024 @easttutorial.gmail.com</p>
+      </div>
+    </div>
+
+    <!-------------------------------- js for toggle menu ------------------------------->
+    <script>
+      var MenuItems = document.getElementById("menuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menuToggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px"
+        }
+        else{
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+
+    </script>
+    
+    <!-------------------------------- js for prodcut gallery ------------------------------->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function(){
+            productImg.src = smallImg[4].src;
+        }
+
+    </script>
+
+
+  </body>
+</html>
